@@ -146,6 +146,7 @@
 
 .step-img-box::before {
   content: "";
+  display: block;
 }
 
 .step-img {

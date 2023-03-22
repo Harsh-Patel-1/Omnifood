@@ -27,6 +27,7 @@ Paragrap-default: 1.6
 - Tints: 
 #fdf2e9 
 #fae5d3
+#eb984e
 
 - Shades: #cf711f
 - Accents:
@@ -36,6 +37,8 @@ Paragrap-default: 1.6
 #333
 
 -- 03 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 -- 04 BORDER-RADIUS
 Default: 9px
@@ -83,6 +86,10 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -200,7 +207,7 @@ body {
 }
 
 .margin-bottom-md {
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem !important;
 }
 
 .center-text {

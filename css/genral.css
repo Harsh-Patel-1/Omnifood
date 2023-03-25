@@ -29,7 +29,10 @@ Paragrap-default: 1.6
 #fae5d3
 #eb984e
 
-- Shades: #cf711f
+- Shades: 
+#cf711f
+#45260a
+
 - Accents:
 - Greys: 
 #6f6f6f(lightest grey allowed in #fdf2e9)
@@ -144,6 +147,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -151,6 +155,11 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 15px;
   text-decoration: none;
+
+  /* only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
@@ -180,6 +189,12 @@ body {
   /* border: 3px solid #fff; */
 
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
 }
 
 .link:link,

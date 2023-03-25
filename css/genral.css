@@ -35,6 +35,8 @@ Paragrap-default: 1.6
 
 - Accents:
 - Greys: 
+#888
+#767676(lightest grey allowed on #fff)
 #6f6f6f(lightest grey allowed in #fdf2e9)
 #555 
 #333
@@ -105,6 +107,9 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -195,6 +200,12 @@ body {
   background-color: #45260a;
   color: #fdf2e9;
   align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -211,6 +222,11 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /**********************************/
